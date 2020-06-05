@@ -2,10 +2,14 @@ package main.kotlin;
 
 public class Use {
 
-    private Short a;
-    private Short b;
+    private Short a = 2;
+    private Short b = 4;
 
     public void example() {
-        Func.round(a*2/b, 3);
+
+        Fails.round(a*2/b, 3);
+
+        Works.round(a*2/b, 3);
+
     }
 }
